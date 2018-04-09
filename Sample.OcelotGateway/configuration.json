@@ -1,0 +1,23 @@
+﻿{
+  "ReRoutes":[
+    {
+      "DownstreamPathTemplate": "/api/values",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/first-api/values",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions":{
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "GlobalConfiguration":{
+    "BaseUrl":"http://localhost:5000"
+  }
+}
